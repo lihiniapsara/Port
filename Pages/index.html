@@ -1,18 +1,17 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+        <link rel="stylesheet" href="../assest/CSS/styles.css">
 </head>
     <style>
         body{
             background-color: black;
         }
 
-        footer{
-            color: white;
-        }
         .content>section{
             color: white;
         }
@@ -20,13 +19,14 @@
             color: white;
         }
 
+
     </style>
 
     <body>
 
         <aside class="sidebar">
 
-            <header><span style="color: darkgoldenrod">L</span> apsara</header>
+            <h1 class="brand">L<span>apsara</span></h1>
 
             <nav>
                 <ul>
@@ -39,11 +39,13 @@
                 </ul>
             </nav>
 
-            <section class="social-media">
-                <a href="#"><img src="../assest/images/LINK.png" alt="LinkedIn"></a>
-                <a href="#"><img src="../assest/images/git.png" alt="GitHub"></a>
-                <a href="#"><img src="../assest/images/instagram-icon.png" alt="Instargram"></a>
-                <a href="#"><img src="../assest/images/fb_processed.png" alt="Facebook"></a>
+            <section class="socials">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=615531956264i35&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://github.com/lihiniapsara"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lihini-apsara-857aaa279/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://x.com/lihiniapsa92643?t=Cb-vXKAZ07B6p4PlNul3xw&s=09"><i class="fab fa-twitter"></i></a></li>
+                </ul>
             </section>
 
             <footer>© 2024 Tech</footer>
@@ -54,9 +56,9 @@
 
             <section class="home" id="home">
                     <img src="../assest/images/profile.png" alt="Lihini Apsara">
-                    <h3>Hello, I'm</h3>
-                    <h1>Lihini Apsara</h1>
-                    <h3>And I'm a <span style="color: #FFD700;">Web Developer</span></h3>
+                    <p>Hello. I'm</p>
+                    <h2>Lihini Apsara</h2>
+                    <p>I am a <span class="role">Web Developer</span></p>
                 </section>
 
             <section class="about" id="about">
@@ -132,9 +134,9 @@
             <section class="contact" id="contact">
                 <h1>Contact <span>Me</span></h1>
                 <div class="contact-info">
-                    <h6>283/6, Swarnajothi Mawatha, Thanthirimulla, Panadura</h6>
-                    <h6>apsaralihini11@gmail.com</h6>
-                    <p>+94786767390</p>
+                    <h6>📍283/6, Swarnajothi Mawatha, Thanthirimulla, Panadura</h6>
+                    <h6>📧apsaralihini11@gmail.com</h6>
+                    <p>📞+94786767390</p>
                 </div>
                 <form class="contact-form">
                     <input type="text" name="name" placeholder="Name">
@@ -147,4 +149,130 @@
         </main>
 
     </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1440, initial-scale=1.0">
+    <title>Lihini Apsara Portfolio</title>
+    <link rel="stylesheet" href="../assest/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h1 class="brand">L<span>apsara</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
+                <li><a href="#resume"><i class="fa fa-file"></i> Resume</a></li>
+                <li><a href="#projects"><i class="fa fa-folder"></i> Projects</a></li>
+                <li><a href="#activities"><i class="fa fa-tasks"></i> Activities</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <footer>&copy; 2024 Lapsara</footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Home Section -->
+        <section id="home" class="intro section">
+            <div class="overlay">
+                <p>Hello. I'm</p>
+                <h2>Lihini Apsara</h2>
+                <p>I am a <span class="role">Web Developer</span></p>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-me section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="../assest/images/profile2.png" alt="Lihini Apsara">
+                <div>
+                    <h3>Lihini Apsara Perera</h3>
+                    <p>UX UI Designer</p>
+                    <p>Lihini Apsara Perera is a web developer hailing from Panadura, Sri Lanka. She has 2 years of experience in building web solutions and providing creative business solutions.</p>
+                    <button>Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+            <h2>Resume</h2>
+            <div class="resume-content">
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Diploma in Web Development - 2020</li>
+                        <li>Bachelor of IT - 2021</li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>Programming Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
+                    <h3>Designing Skills</h3>
+                    <ul>
+                        <li>UI/UX Prototyping</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <h2>Our Projects</h2>
+            <ul>
+                <li>KPI Industry (MVC)</li>
+                <li>KPI Industry (Lagerd)</li>
+                <li>OOP Game Portfolio</li>
+            </ul>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities section">
+            <h2>Activities</h2>
+            <div class="activity-images">
+                <img src="../assest/images/book.png" alt="Activity 1">
+                <img src="../assest/images/cook.png" alt="Activity 2">
+                <img src="../assest/images/tv.png" alt="Activity 3">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+                <p><i class="fas fa-map-marker-alt"></i> Panadura, Sri Lanka</p>
+                <p><i class="fas fa-envelope"></i> lihiniapsara@mail.com</p>
+                <p><i class="fas fa-phone"></i> +94 771 234 567</p>
+            </div>
+            <form>
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+</div>
+</body>
 </html>
