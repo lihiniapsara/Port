@@ -133,10 +133,13 @@ body {
 
 .container {
     display: flex;
+    margin-right: 250px;
 }
 
 .sidebar {
+    position: fixed;
     width: 250px;
+    height: 100%;
     background-color: #000;
     display: flex;
     flex-direction: column;
@@ -148,6 +151,10 @@ body {
     font-size: 24px;
     color: white;
     margin-bottom: 20px;
+
+}
+.brand>ul>li{
+    margin: 20px 0px;
 }
 
 .brand span {
@@ -175,16 +182,25 @@ nav ul li a i {
     margin-right: 10px;
 }
 
-.socials {
+.social-icons {
+    list-style: none;
     display: flex;
-    margin-top: auto;
-    margin-bottom: 20px;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.socials a {
-    color: white;
-    text-decoration: none;
+.social-icons li {
     margin: 0 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #FFD700;
 }
 
 footer {
@@ -246,13 +262,79 @@ footer {
     margin-right: 20px;
 }
 
-.resume-content {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.resume-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.columns {
     display: flex;
     justify-content: space-between;
 }
-
-.resume-content ul {
-    list-style: none;
+.column {
+    width: 45%;
+}
+.section-title {
+    font-size: 24px;
+    color: #fcb72b;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.section-title i {
+    margin-right: 10px;
+}
+.education-item, .skills-item {
+    margin-bottom: 20px;
+}
+.education-item p {
+    margin: 0;
+    font-size: 16px;
+}
+.education-item .year {
+    color: #fcb72b;
+}
+.skills-list {
+    margin-top: 20px;
+}
+.skills-item .skill-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.skills-item .progress-bar {
+    background-color: #444;
+    height: 5px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: #fcb72b;
+}
+.icon {
+    color: #fcb72b;
+    font-size: 18px;
+    margin-right: 10px;
+}
+.numbered-list {
+    list-style-type: none;
+    padding: 0;
+}
+.numbered-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.numbered-list li .number {
+    color: #fcb72b;
+    font-size: 18px;
+    margin-right: 10px;
 }
 
 .projects ul {
